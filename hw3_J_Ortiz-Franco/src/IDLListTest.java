@@ -1,4 +1,7 @@
-
+/*
+ * Name: Johann Ortiz-Franco
+ * CS570 - Data Structures
+ */
 public class IDLListTest {
 
 	public static void main(String[] args) {
@@ -105,7 +108,7 @@ public class IDLListTest {
 		System.out.println("REMOVE NODE IF PRESENT IN LIST");
 		System.out.println("T/F: Is Node 100 present in Integer list? Remove if true: " + test1.remove(100));
 		System.out.println("T/F: Is Node 300 present in Integer list? Remove if true: " + test1.remove(300));
-		System.out.println("T/F: Is Node 10.4 present in Double list? Remove if true: " + test2.remove(10.4)); 		//FIXME - not removing double. cannot find 
+		System.out.println("T/F: Is Node 10.4 present in Double list? Remove if true: " + test2.remove(10.4)); 		
 		System.out.println("T/F: Is Node 1.1 present in Double list? Remove if true: " + test2.remove(1.1));
 		System.out.println("T/F: Is Node 60 present in String list? Remove if true: " + test3.remove("60"));
 		System.out.println("T/F: Is Node 5 present in Stromg list? Remove if true: " + test3.remove("5"));

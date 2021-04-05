@@ -63,7 +63,6 @@ public class IDLList<E> {
 	}
 
 	// used to add node when list is empty
-	//FIXME: Determine how to add error handling -- ask TA
 	public boolean add(E elem) 
 	{	
 		Node<E> tmpNode = new Node<E>(elem);
@@ -95,7 +94,6 @@ public class IDLList<E> {
 	}
 
 	//append (E elem) that adds elem as the new last element of the list (i.e. at the tail)
-	//FIXME: Determine how to do error handling -- ASK TA
 	public boolean append(E elem)
 	{
 		if(head == null)													//determines if list is empty
@@ -153,7 +151,6 @@ public class IDLList<E> {
 	}
 	
 	//returns the list size
-	//FIXME: How to do error handling? -- Ask TA
 	public int size() {
 		
 		return indices.size();
@@ -271,7 +268,7 @@ public class IDLList<E> {
 		
 		for(int i = 0; i < indices.size(); i++)
 		{
-			if(tmpNode.data == elem) 
+			if(tmpNode.data.equals(elem)) 
 			{
 				removeAt(i);
 				return true;
